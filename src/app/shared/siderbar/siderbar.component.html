@@ -1,0 +1,15 @@
+<div class="bg-light border-right p-3 siderbar">
+    <h3 class="text-dark">Giphy-Gifs</h3>
+    <hr class="text-dark">
+
+    <div class="list-group">
+        <a 
+            *ngFor="let historial of historiales" 
+            [routerLink]="['']"
+            class="list-group-item list-group-item-action bg-danger text-light"
+            (click)="buscar(historial)"
+        >
+            {{historial | titlecase}}
+        </a>
+    </div>
+</div>
